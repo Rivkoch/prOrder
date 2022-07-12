@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.prorderemptyproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.PrOrderEmptyProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".ClientsActivities.EditChildrenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClientsActivities.AddAnotherChildActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClientsActivities.ShowTrainerActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClientsActivities.AddTrainerActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClientsActivities.ChildrenDataActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClientsActivities.SetClientDataActivity"
+            android:configChanges="orientation"
+            android:launchMode="singleInstance"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClientsActivities.OrderCompletionActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClientsActivities.ClientMainActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"></activity>
+    </application>
+
+</manifest>

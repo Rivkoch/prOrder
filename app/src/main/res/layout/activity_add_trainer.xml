@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClientsActivities.AddTrainerActivity">
+
+    <!--    <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#82000000"/>
+            -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/trainerData_IMG_Close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_close_window"
+            android:background="@drawable/ic_blue"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:gravity="center_horizontal"
+                android:text="@string/trainer_data"
+                android:textColor="@color/teal_700"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/trainerData_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Name"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/trainerData_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Email"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/trainerData_phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Phone"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:id="@+id/clientData_LL_Gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/gender" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/trainerData_Male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/Male"
+                    android:backgroundTint="@color/entrance_button_background"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/trainerData_Female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/Female"
+                    android:backgroundTint="@color/entrance_button_background"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center">
+
+                </com.google.android.material.button.MaterialButton>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/trainerData_WithoutGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Without"
+                    android:backgroundTint="@color/entrance_button_background"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center">
+
+                </com.google.android.material.button.MaterialButton>
+
+
+                <!--
+                <RadioGroup
+                    android:id="@+id/trainerData_RBG_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton
+                        android:id="@+id/trainerData_Male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/Male">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/trainerData_Female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/Female">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/trainerData_WithoutGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/Without">
+
+                    </RadioButton>
+                </RadioGroup>
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clientData_LL_Age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/experienceYears"/>
+
+                <Spinner
+                    android:id="@+id/trainerData_ageSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="25dp"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/trainerData_BTN_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/Save" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    ]</androidx.constraintlayout.widget.ConstraintLayout>

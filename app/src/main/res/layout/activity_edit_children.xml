@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#F3F6F6"
+    android:padding="24dp"
+    tools:context=".ClientsActivities.EditChildrenActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/editChildrenInfo"
+        android:layout_marginBottom="24dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choseChild"
+            android:textColor="#08535D"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:id="@+id/editChild_sp_chooseChild"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:id="@+id/editChild_BTN_edit">
+
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:background = "@color/white">
+
+        <EditText
+            android:id="@+id/editChild_ET_childName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Child Name"
+            android:paddingTop="16dp"
+            android:textSize="19sp" />
+
+
+        <EditText
+            android:id="@+id/editChild_ET_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age:"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/editChild_layoutExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/experience"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/editChildExperience_BTN_true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/yes"
+                android:backgroundTint="@color/entrance_button_background"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/editChildExperience_BTN_false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/no"
+                android:backgroundTint="@color/entrance_button_background"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Has Experience:"
+                android:layout_marginBottom="24dp"
+                android:id="@+id/editChild_txt_currentExperience"/>
+
+            <EditText
+                android:id="@+id/editChild_ET_experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/explain"
+                android:inputType="textEmailAddress"
+                android:textAlignment="textStart" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/editChild_BTN_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="8dp"
+                    android:text="@string/Cancel"
+                    android:textColor="@color/bottom_item_background"
+                    android:backgroundTint="#C7E3E3"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/editChild_BTN_save"
+                    android:layout_marginStart="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="8dp"
+                    android:text="@string/Save"
+                    android:backgroundTint="@color/entrance_button_background"/>
+
+            </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/editChild_addAnother"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AddAnother"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="24sp"
+            android:backgroundTint="@color/entrance_button_background"
+            ></com.google.android.material.button.MaterialButton>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

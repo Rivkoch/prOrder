@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#189AB4">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="7dp"
+        app:cardElevation="7dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/list_LBL_childName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="40sp"
+                    android:textColor="#000000"
+                    android:text="Child Name"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/liqueur_LBL_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Age: _age_"
+                    android:textStyle="bold"
+                    android:textColor="#B8B8B8"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="end"
+                    >
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/list_BTN_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:text="Edit"
+                            android:fontFamily="sans-serif-medium"
+                            android:textStyle="italic"
+                            android:backgroundTint="#3300BCD4"
+                            android:textColor="@color/black">
+                        </com.google.android.material.button.MaterialButton>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/list_BTN_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_gravity="end"
+                            android:text="Delete"
+                            android:fontFamily="sans-serif-medium"
+                            android:textStyle="italic"
+                            android:backgroundTint="#3300BCD4"
+                            android:textColor="@color/black">
+
+                        </com.google.android.material.button.MaterialButton>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!--
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:elevation="7dp"
+            app:cardElevation="7dp"
+            app:cardCornerRadius="18dp"
+            >
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#292929">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:src="#808080"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/liqueur_LBL_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Group Name"
+                        android:textColor="#FFFDFD"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/liqueur_LBL_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Menbers: _number_"
+                        android:textColor="#B8B8B8"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/liqueur_LBL_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Topic"
+                        android:textColor="#DFC25A"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/shape_rounded_stroke"
+                        android:layout_margin="6dp"
+                        android:layout_gravity="end">
+
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/liqueur_LBL_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="View"
+                            android:textColor="#DFC25A"
+                            android:textSize="18sp" />
+
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </LinearLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/liqueur_IMG_image"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_alignBottom="@id/card"
+            android:layout_marginStart="10dp"
+            android:elevation="10dp"
+            android:padding="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_running" />
+    -->
+
+</RelativeLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    tools:context=".ClientFragments.ClientEditFragment"
+    android:background="#F3F6F6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:background = "@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/change"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:padding="8dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_marginBottom="12dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit_ET_userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:gravity="center"
+                    android:hint="User Name"
+                    android:paddingTop="16dp"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/edit_txt_userType"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_marginBottom="16dp"
+                    android:text="Client"
+                    android:gravity="center"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <EditText
+                    android:id="@+id/edit_ET_phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.3"
+                    android:hint="Phone: "
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edit_ET_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.3"
+                    android:hint="Age:"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/clientData_LL_Gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gender" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/edit_BTN_WithoutGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/Without"
+                        android:textSize="10sp"
+                        android:backgroundTint="@color/entrance_button_background"
+                        android:textStyle="bold">
+
+                    </com.google.android.material.button.MaterialButton>
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/edit_BTN_Male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/Male"
+                        android:textSize="10sp"
+                        android:backgroundTint="@color/entrance_button_background"
+                        android:textStyle="bold"/>
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/edit_BTN_Female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/Female"
+                        android:textSize="10sp"
+                        android:backgroundTint="@color/entrance_button_background"
+                        android:textStyle="bold">
+
+                    </com.google.android.material.button.MaterialButton>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/edit_txt_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.3"
+                    android:text="Your Gender: "
+                    android:gravity="center"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/edit_BTN_children"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:layout_marginVertical="8dp"
+                android:text="@string/EditChildren"
+                android:backgroundTint="@color/entrance_button_background"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp">
+                <Button
+                    android:id="@+id/edit_BTN_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="8dp"
+                    android:text="@string/Cancel"
+                    android:textColor="@color/bottom_item_background"
+                    android:backgroundTint="#C7E3E3"/>
+                <Button
+                    android:id="@+id/edit_BTN_save"
+                    android:layout_marginStart="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="8dp"
+                    android:text="@string/Save"
+                    android:backgroundTint="@color/entrance_button_background"/>
+
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

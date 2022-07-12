@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center|top"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ClientFragments.AddOrderFragment"
+    android:background="#F3F6F6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <!--Title and choose trainer-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/newOrder"
+                android:textColor="#08535D"
+                android:textSize="45sp"
+                android:textAlignment="center"
+                android:layout_height="0dp"
+                android:layout_weight="1"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pointTrainer"
+                    android:textSize="24sp"
+                    android:textColor="#08535D"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:id="@+id/addOrder_txt_pointTrainer"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/entrance_button_background"
+                    android:text="@string/ChooseTrainer"
+                    android:layout_gravity="center|top"
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/addOrder_BTN_chooseTrainer"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/showChosenTrainer"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:id="@+id/addOrder_txt_chooseTrainer"/>
+        </LinearLayout>
+
+        <!--Choose date-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pointDate"
+                android:textSize="24sp"
+                android:textColor="#08535D"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:id="@+id/addOrder_txt_pointDate"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Date"
+                android:layout_gravity="center|top"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/entrance_button_background"
+                android:id="@+id/addOrder_BTN_chooseDate"/>
+
+        </LinearLayout>
+
+        <!--Show date and choose time-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/showChosenDate"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:id="@+id/addOrder_txt_chooseDate"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pointTime"
+                    android:textSize="24sp"
+                    android:textColor="#08535D"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:id="@+id/addOrder_txt_pointTime"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose Time"
+                    android:layout_gravity="center|top"
+                    android:backgroundTint="@color/entrance_button_background"
+                    android:id="@+id/addOrder_BTN_chooseTime"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time: "
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:id="@+id/addOrder_txt_chooseTime"/>
+         </LinearLayout>
+
+        <!--Show time and finish-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/layout_addChildToOrder"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/addOrder_txt_chooseChild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choseChild"
+                    android:textColor="#08535D"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:id="@+id/addOrder_sp_chooseChild"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Add Order"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/entrance_button_background"
+                android:textSize="24sp"
+                android:id="@+id/addOrder_BTN_submit"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

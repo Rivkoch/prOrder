@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClientsActivities.SetClientDataActivity">
+
+<!--    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#82000000"/>
+        -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:gravity="center">
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="40dp"
+              android:gravity="center_horizontal"
+              android:text="@string/clients_data"
+              android:textColor="@color/teal_700"
+              android:textSize="30sp"
+              android:textStyle="bold" />
+
+          <com.google.android.material.textfield.TextInputLayout
+                  android:layout_width="match_parent"
+                  style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                  android:layout_height="wrap_content">
+
+                  <com.google.android.material.textfield.TextInputEditText
+                      android:id="@+id/clientData_phoneNumber"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="@string/Phone"
+                      android:inputType="number"/>
+              </com.google.android.material.textfield.TextInputLayout>
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="16dp"
+                  android:text="@string/parent"/>
+<!--
+              <com.google.android.material.button.MaterialButton
+                  android:id="@+id/clientData_BTN_isParent"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="16dp"
+                  android:layout_marginStart="16dp"
+                  android:text="@string/yes"/>
+
+              <com.google.android.material.button.MaterialButton
+                  android:id="@+id/clientData_BTN_notParent"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="16dp"
+                  android:layout_marginStart="16dp"
+                  android:text="@string/no"/>
+
+
+             -->
+                           <RadioGroup
+                               android:id="@+id/clientData_RBG_yes_no"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:orientation="horizontal"
+                               >
+                                       <RadioButton
+                                           android:id="@+id/clientData_isParent"
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:layout_marginStart="16dp"
+                                           android:layout_marginTop="16dp"
+                                           android:text="@string/yes"/>
+                                       <RadioButton
+                                           android:id="@+id/clientData_notParent"
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:layout_marginStart="16dp"
+                                     android:layout_marginTop="16dp"
+                                           android:text="@string/no"/>
+
+                                       </RadioGroup>
+<!--
+                                        <Button
+                                            android:id="@+id/button_apply"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/text_view_selected"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginTop="16                                android:layout_marginStart="16dp"
+                                            android:text="apply" />
+
+
+                                        <Spinner
+                                            android:id="@+id/clientData_spinner"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="16dp"
+                                            android:layout_marginStart="25dp"/>
+                                                 -->
+
+          </LinearLayout>
+
+
+          <LinearLayout
+              android:id="@+id/clientData_LL_Gender"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="16dp"
+                  android:text="@string/gender" />
+
+              <com.google.android.material.button.MaterialButton
+                  android:id="@+id/clientData_WithoutGender"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="10dp"
+                  android:text="@string/Without"
+                  android:textSize="12dp"
+                  android:backgroundTint="@color/entrance_button_background"
+                  android:textStyle="bold"
+                  android:layout_gravity="center">
+
+              </com.google.android.material.button.MaterialButton>
+
+
+                           <com.google.android.material.button.MaterialButton
+                               android:id="@+id/clientData_Male"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginStart="10dp"
+                               android:text="@string/Male"
+                               android:textSize="12dp"
+                               android:backgroundTint="@color/entrance_button_background"
+                               android:textStyle="bold"
+                               android:layout_gravity="center"/>
+
+
+                           <com.google.android.material.button.MaterialButton
+                               android:id="@+id/clientData_Female"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginStart="5dp"
+                               android:text="@string/Female"
+                               android:textSize="12dp"
+                               android:backgroundTint="@color/entrance_button_background"
+                               android:textStyle="bold"
+                               android:layout_gravity="center">
+
+                           </com.google.android.material.button.MaterialButton>
+
+              <!--
+                                        <RadioGroup
+                               android:id="@+id/clientData_RBG_gender"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:orientation="horizontal"
+                               >
+
+              <RadioButton
+                  android:id="@+id/clientData_Male"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="16dp"
+                  android:layout_marginTop="16dp"
+                  android:text="@string/Male">
+
+              </RadioButton>
+
+              <RadioButton
+                                       android:id="@+id/clientData_Female"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_marginTop="16dp"
+                                       android:layout_marginStart="16dp"
+                                       android:text="@string/Female">
+
+                                   </RadioButton>
+
+                                   <RadioButton
+                                       android:id="@+id/clientData_WithoutGender"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_marginStart="16dp"
+                                       android:layout_marginTop="16dp"
+                                       android:text="@string/Without">
+
+                                   </RadioButton>
+                           </RadioGroup>
+-->
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/clientData_LL_Age"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="16dp"
+                  android:text="@string/Age"/>
+
+              <Spinner
+                  android:id="@+id/clientData_ageSpinner"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="16dp"
+                  android:layout_marginStart="25dp"/>
+
+          </LinearLayout>
+
+          <com.google.android.material.button.MaterialButton
+                  android:id="@+id/clientData_BTN_save"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="24dp"
+                  android:text="@string/Save"/>
+
+          </LinearLayout>
+
+
+<!--          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="5"
+              android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/viewChild_childs"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Childs"
+                  android:textSize="14sp" />
+
+              <FrameLayout
+                  android:id="@+id/frameLayout"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginTop="16dp"></FrameLayout>
+
+          </LinearLayout>
+-->
+    </LinearLayout>
+]</androidx.constraintlayout.widget.ConstraintLayout>

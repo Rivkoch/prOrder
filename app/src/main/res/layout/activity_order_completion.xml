@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".ClientsActivities.OrderCompletionActivity">
+
+
+    <TextView
+        android:id="@+id/orderComplete_txt_ClientTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Thank you..."
+        android:textColor="#08535D"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trainer Name"
+        android:textColor="#C508535D"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:id="@+id/orderComplete_txt_TrainerName"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Date"
+        android:id="@+id/orderComplete_txt_date"
+        android:textSize="24sp"
+        android:textColor="#C508535D"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/childName"
+        android:id="@+id/orderComplete_txt_childName"
+        android:textSize="24sp"
+        android:textColor="#C508535D"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/orderComplete_BTN_BACK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="@string/BackToMain"/>
+
+
+</LinearLayout>
