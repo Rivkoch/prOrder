@@ -236,6 +236,9 @@ public class AddOrderFragment extends Fragment implements TrainerClicklistener {
                 saveOrderToDB();
             }
         }
+        else{
+            saveOrderToDB();
+        }
 
     }
 
